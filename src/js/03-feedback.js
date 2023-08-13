@@ -24,7 +24,7 @@ function handlerInput()
         };
 
         localStorage.setItem(storKey, JSON.stringify(userCard))  
-        console.log(userCard);
+        //console.log(userCard);
     };
 
 loginForm.addEventListener(`submit`, handlerSubmit);

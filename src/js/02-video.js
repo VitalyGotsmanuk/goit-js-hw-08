@@ -3,15 +3,12 @@ import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
 
 const iframe = document.querySelector('iframe');
-
-//console.dir (Object);
-
 const player = new Player(iframe);
 
 //console.log(player.element);
 
 function time(obj){
-    console.dir(obj);
+    //console.dir(obj);
     const seconds = obj.seconds;
     console.log(seconds);
     localStorage.setItem(`currentTime`, JSON.stringify(seconds));
@@ -29,10 +26,4 @@ player.setCurrentTime(timeVideo);
 
 // player.getVideoTitle().then(function(title) {
 //     console.log('title:', title);
-// });
-
-// player.getCurrentTime().then(function(seconds) {
-//     console.log(seconds);
-// }).catch(function(error) {
-//     // an error occurred
 // });
