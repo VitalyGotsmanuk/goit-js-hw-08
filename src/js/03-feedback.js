@@ -6,7 +6,7 @@ import throttle from 'lodash.throttle';
 const storKey = `feedback-form-state`;
 const storData = JSON.parse(localStorage.getItem(storKey));
 
-console.dir(loginForm.elements);
+//console.dir(loginForm.elements);
 
 loginForm.addEventListener(`input`, throttle(handlerInput, 500));
 
@@ -40,6 +40,7 @@ function handlerSubmit(evt) {
         // email: email.value,
         // message: message.value, };
         // console.log(userCard);
+        
         console.log(JSON.parse(localStorage.getItem(storKey)));
         
         loginForm.reset();
